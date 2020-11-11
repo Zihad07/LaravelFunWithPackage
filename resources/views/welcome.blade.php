@@ -84,6 +84,11 @@
                     Laravel
                 </div>
 
+
+                <form action="/post" method="post">
+                    @csrf
+                    <input type="submit" value="Create">
+                </form>
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
@@ -96,5 +101,6 @@
                 </div>
             </div>
         </div>
+        @include('sweetalert::alert')
     </body>
 </html>
